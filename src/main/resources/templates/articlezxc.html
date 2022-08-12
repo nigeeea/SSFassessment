@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Crypto News of the Day</h1>
+    <input type="submit" value="Save">
+
+    <table data-th-each="a: ${listzxc}">
+        <tr>
+            <td>The id: </td>
+            <td data-th-text="${a.id}"></td>
+        </tr>
+        <tr>
+            <td>The published_on: </td>
+            <td data-th-text="${a.published_on}"></td>
+        </tr>
+        <tr>
+            <td>The title: </td>
+            <td data-th-text="${a.title}"></td>
+        </tr>
+        <tr>
+            <td>The url: </td>
+            <td><a th:href="@{a.url}">Click</a></td>
+            <td data-th-text="${a.url}"></td>
+        </tr>
+        <tr>
+            <td>The imageurl: </td>
+            <td data-th-text="${a.imageurl}"></td>
+            <td><img data-th-src="${a.imageurl}" ></td>
+        </tr>
+        <tr>
+            <td>The body: </td>
+            <td data-th-text="${a.body}"></td>
+        </tr>
+        <tr>
+            <td>The tags: </td>
+            <td data-th-text="${a.tags}"></td>
+        </tr>
+        <tr>
+            <td>The categories: </td>
+            <td data-th-text="${a.categories}"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" value="Save"> Save</td>
+        </tr>
+        <br>
+    </table>
+</body>
+</html>
