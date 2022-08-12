@@ -2,7 +2,6 @@ package assessment.ssfassessment.models;
 
 import java.io.StringReader;
 
-import io.lettuce.core.cluster.PubSubClusterEndpoint;
 import jakarta.json.Json;
 import jakarta.json.JsonObject;
 import jakarta.json.JsonReader;
